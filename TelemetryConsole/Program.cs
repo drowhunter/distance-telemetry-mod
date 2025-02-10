@@ -1,12 +1,13 @@
 ﻿using com.drowmods.DistanceTelemetryMod;
 
+using Drowhunter.UnityMods.Telemetry;
+
 using System.Linq.Expressions;
 using System.Net;
 using System.Numerics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-using TelemetryLib.Telemetry;
 
 namespace MmfReader
 {

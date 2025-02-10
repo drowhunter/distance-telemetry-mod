@@ -11,6 +11,6 @@
     <ProjectReference Include="..\DistanceTelemetryMod\DistanceTelemetryMod.csproj" />
   </ItemGroup>
 
-  <Import Project="..\TelemetryLibrary\TelemetryLibrary.projitems" Label="Shared" />
+  <Import Project="..\..\Drowhunter.UnityMod\TelemetryLibrary.projitems" Label="Shared" />
 
 </Project>

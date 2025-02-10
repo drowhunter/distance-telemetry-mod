@@ -11,11 +11,9 @@ using Events.RaceEnd;
 using System;
 using System.Net;
 
-using TelemetryLib.Telemetry;
-
-using TelemetryLibrary;
-
 using UnityEngine;
+using Drowhunter.UnityMods.Telemetry;
+using Drowhunter.UnityMods;
 
 namespace com.drowmods.DistanceTelemetryMod
 {
@@ -164,13 +162,14 @@ namespace com.drowmods.DistanceTelemetryMod
 
             var cForce = localVelocity.magnitude * localAngularVelocity.magnitude * Math.Sign(localAngularVelocity.y);
 
-            
+
 
             data.Yaw = Maths.HemiCircle(_yaw * Mathf.Rad2Deg % 360);
 
             data.Pitch = Maths.CopySign(Vector3.Angle(new Vector3(cRigidbody.transform.forward.x, 0, cRigidbody.transform.forward.z), cRigidbody.transform.forward), cRigidbody.transform.forward.y);
 
-            data.Roll =  Maths.CopySign(Vector3.Angle(new Vector3(cRigidbody.transform.right.x  , 0, cRigidbody.transform.right.z  ), cRigidbody.transform.right),   cRigidbody.transform.right.y);
+            data.Roll = Maths.CopySign(Vector3.Angle(new Vector3(cRigidbody.transform.right.x  , 0, cRigidbody.transform.right.z  ), cRigidbody.transform.right),   cRigidbody.transform.right.y);
+
 
             var car_logic = car.carLogic_;
 
@@ -240,7 +239,7 @@ namespace com.drowmods.DistanceTelemetryMod
 
                 var frac = pos / suspension;
 
-                return (float) Maths.EnsureMapRange(pos, 0, suspension, 1, -1);
+                return (float)Maths.Maths.EnsureMapRange(pos, 0, suspension, 1, -1);
             }
 
         }

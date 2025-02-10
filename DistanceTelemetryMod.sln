@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceTelemetryMod", "Dis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryConsole", "TelemetryConsole\TelemetryConsole.csproj", "{2CF30D2B-EEB0-4809-9C92-468804A2E52F}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TelemetryLib", "TelemetryLibrary\TelemetryLib.shproj", "{EEB444E9-0B1F-467D-B01C-EDBA291BC941}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Drowhunter.UnityMods", "..\Drowhunter.UnityMod\Drowhunter.UnityMods.shproj", "{EEB444E9-0B1F-467D-B01C-EDBA291BC941}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,8 +28,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		TelemetryLibrary\TelemetryLibrary.projitems*{2cf30d2b-eeb0-4809-9c92-468804a2e52f}*SharedItemsImports = 5
-		TelemetryLibrary\TelemetryLibrary.projitems*{afc95631-2530-473a-a1b8-39321336390d}*SharedItemsImports = 5
-		TelemetryLibrary\TelemetryLibrary.projitems*{eeb444e9-0b1f-467d-b01c-edba291bc941}*SharedItemsImports = 13
+		..\Drowhunter.UnityMod\TelemetryLibrary.projitems*{2cf30d2b-eeb0-4809-9c92-468804a2e52f}*SharedItemsImports = 5
+		..\Drowhunter.UnityMod\TelemetryLibrary.projitems*{afc95631-2530-473a-a1b8-39321336390d}*SharedItemsImports = 5
+		..\Drowhunter.UnityMod\TelemetryLibrary.projitems*{eeb444e9-0b1f-467d-b01c-edba291bc941}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

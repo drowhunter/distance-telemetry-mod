@@ -4,7 +4,7 @@
     <TargetFramework>net35</TargetFramework>
     <AssemblyName>DistanceTelemetryMod</AssemblyName>
     <Product>Distance Telemetry mod</Product>
-    <Version>1.5.3</Version>
+    <Version>1.5.4</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <RestoreAdditionalProjectSources>
@@ -47,5 +47,5 @@
     </Reference>
   </ItemGroup>
   
-  <Import Project="..\TelemetryLibrary\TelemetryLibrary.projitems" Label="Shared" />
+  <Import Project="..\..\Drowhunter.UnityMod\TelemetryLibrary.projitems" Label="Shared" />
 </Project>
