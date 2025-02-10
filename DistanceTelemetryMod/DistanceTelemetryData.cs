@@ -3,7 +3,7 @@
 namespace com.drowmods.DistanceTelemetryMod
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal struct DistanceTelemetryData
+    public struct DistanceTelemetryData
     {
         public bool GamePaused;
         public bool IsRacing;

@@ -45,7 +45,7 @@ namespace com.drowmods.DistanceTelemetryMod
             {
                 if(_car == null)
                 {                    
-                    _car = G.Sys?.PlayerManager_?.localPlayers_?[0]?.playerData_?.localCar_;  
+                    _car = G.Sys?.PlayerManager_?.LocalPlayers_?[0]?.playerData_?.LocalCar_;  
                     if(_car != null)
                     {
                         SubscribeToEvents();
@@ -145,7 +145,7 @@ namespace com.drowmods.DistanceTelemetryMod
             data.IsCarEnabled = car.ExistsAndIsEnabled();
 
             var cRigidbody = car.GetComponent<Rigidbody>();
-            var car_logic = car.carLogic_;
+            
             
             
             Quaternion rotation = cRigidbody.transform.rotation;
@@ -164,7 +164,7 @@ namespace com.drowmods.DistanceTelemetryMod
 
             var cForce = localVelocity.magnitude * localAngularVelocity.magnitude * Math.Sign(localAngularVelocity.y);
 
-            //var yaw = Vector3.Angle(new Vector3(0, transform.forward.y, transform.forward.z), transform.forward);
+            
 
             data.Yaw = Maths.HemiCircle(_yaw * Mathf.Rad2Deg % 360);
 
@@ -172,6 +172,7 @@ namespace com.drowmods.DistanceTelemetryMod
 
             data.Roll =  Maths.CopySign(Vector3.Angle(new Vector3(cRigidbody.transform.right.x  , 0, cRigidbody.transform.right.z  ), cRigidbody.transform.right),   cRigidbody.transform.right.y);
 
+            var car_logic = car.carLogic_;
 
             data.KPH = car_logic.CarStats_.GetKilometersPerHour();
             
@@ -219,6 +220,8 @@ namespace com.drowmods.DistanceTelemetryMod
             udp.Send(data);
             
 
+            
+
             float CalcSuspension(NitronicCarWheel wheel, float? maxAngle = null, float? grip = null)
             {
                 if (maxAngle != null && MaxSteeringMod.Value)
@@ -237,10 +240,7 @@ namespace com.drowmods.DistanceTelemetryMod
 
                 var frac = pos / suspension;
 
-                var s = Maths.EnsureMapRange(pos, 0, suspension, 1, -1);
-
-                return (float)s;//(s *  (wheel.contact_.IsInContact_ ? 1 : 0 ));
-
+                return (float) Maths.EnsureMapRange(pos, 0, suspension, 1, -1);
             }
 
         }
@@ -249,7 +249,7 @@ namespace com.drowmods.DistanceTelemetryMod
         private void SubscribeToEvents()
         {
             Echo("SubscribeToEvents", "Subscribing to player events");
-            playerEvents = car.playerDataLocal_.Events_;
+            playerEvents = car.PlayerDataLocal_.Events_;
             
             playerEvents.Subscribe(new InstancedEvent<Impact.Data>.Delegate(LocalVehicle_Collided));
             playerEvents.Subscribe(new InstancedEvent<Death.Data>.Delegate(LocalVehicle_Destroyed));
