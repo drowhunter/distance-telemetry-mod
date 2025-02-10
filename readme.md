@@ -11,9 +11,5 @@
 ## Building
 
 1. Place the following dlls into the DistanceTelemetryMod\lib folder
-	- `[GameDir]Distance\BepInEx\core\BepinEx.dll` 
-	- `[GameDir]\Distance\Distance_Data\Managed\UnityEngine.dll`
-	- `Assembly-CSharp_publicized.dll` (You will need to publicize this yourself using)
-1. Place a copy of  from your  in the DistanceTelemetryMod\lib folder
-
-
+	- `Assembly-CSharp_publicized.dll` (You will need to publicize this yourself using [BepInEx.AssemblyPublicizer
+](https://github.com/BepInEx/BepInEx.AssemblyPublicizer))
