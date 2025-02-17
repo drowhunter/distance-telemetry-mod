@@ -1,0 +1,3 @@
+[submodule "com.drowhunter.sharedlib"]
+	path = com.drowhunter.sharedlib
+	url = git@github.com:drowhunter/com.drowhunter.sharedlib.git
