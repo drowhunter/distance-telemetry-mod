@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceTelemetryMod", "DistanceTelemetryMod\DistanceTelemetryMod.csproj", "{AFC95631-2530-473A-A1B8-39321336390D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistanceTelemetryMod", "src\DistanceTelemetryMod.csproj", "{AFC95631-2530-473A-A1B8-39321336390D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelemetryConsole", "TelemetryConsole\TelemetryConsole.csproj", "{2CF30D2B-EEB0-4809-9C92-468804A2E52F}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Drowhunter.UnityMods", "..\Drowhunter.UnityMod\Drowhunter.UnityMods.shproj", "{EEB444E9-0B1F-467D-B01C-EDBA291BC941}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "com.drowhunter.sharedlib", "..\Drowhunter.UnityMod\com.drowhunter.sharedlib.shproj", "{EEB444E9-0B1F-467D-B01C-EDBA291BC941}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

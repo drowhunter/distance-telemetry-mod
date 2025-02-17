@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace com.drowmods.DistanceTelemetryMod
+namespace com.drowhunter.DistanceTelemetryMod
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct DistanceTelemetryData

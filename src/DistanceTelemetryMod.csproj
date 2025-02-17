@@ -12,7 +12,7 @@
       https://nuget.bepinex.dev/v3/index.json;
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
-    <RootNamespace>com.drowmods.DistanceTelemetryMod</RootNamespace>
+    <RootNamespace>com.drowhunter.DistanceTelemetryMod</RootNamespace>
   </PropertyGroup>
     
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

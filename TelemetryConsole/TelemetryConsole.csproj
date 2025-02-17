@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DistanceTelemetryMod\DistanceTelemetryMod.csproj" />
+    <ProjectReference Include="..\src\DistanceTelemetryMod.csproj" />
   </ItemGroup>
 
   <Import Project="..\..\Drowhunter.UnityMod\TelemetryLibrary.projitems" Label="Shared" />

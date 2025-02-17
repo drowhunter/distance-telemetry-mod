@@ -1,6 +1,6 @@
-﻿using com.drowmods.DistanceTelemetryMod;
+﻿using com.drowhunter.DistanceTelemetryMod;
 
-using Drowhunter.UnityMods.Telemetry;
+using com.drowhunter.sharedlib.Telemetry;
 
 using System.Linq.Expressions;
 using System.Net;

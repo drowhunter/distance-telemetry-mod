@@ -12,16 +12,14 @@ using System;
 using System.Net;
 
 using UnityEngine;
-using Drowhunter.UnityMods.Telemetry;
-using Drowhunter.UnityMods;
+using com.drowhunter.sharedlib.Telemetry;
+using com.drowhunter.sharedlib;
 
-namespace com.drowmods.DistanceTelemetryMod
+namespace com.drowhunter.DistanceTelemetryMod
 {
     [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
     public class DistanceTelemetryPlugin : BaseUnityPlugin
     {
-       
-
         static ManualLogSource Log;
 
         
@@ -239,7 +237,7 @@ namespace com.drowmods.DistanceTelemetryMod
 
                 var frac = pos / suspension;
 
-                return (float)Maths.Maths.EnsureMapRange(pos, 0, suspension, 1, -1);
+                return (float)Maths.EnsureMapRange(pos, 0, suspension, 1, -1);
             }
 
         }
